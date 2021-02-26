@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Interactive Story </title>
+	<link rel="icon" href="pictures/diamond.jpg">
+	<script>
+		function input()
+		{
+			if (choice1.checked)
+			{
+				parent.location = "chapter3-b.html";
+			}
+			else
+			{
+				parent.location = "lose.html";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Chapter 3: Puzzle</h1>
+	<p>Find the missing number</p>
+	<p>4</p>
+	<p>&ensp;6</p>
+	<p>&ensp; &ensp; 8</p>
+	<p>&ensp; &ensp; &ensp; 9</p>
+	<p>&ensp; &ensp; &ensp; &ensp; 10</p>
+	<p>&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; ?</p>
+
+	<div>
+		<label>Choose one of the selections below:</label>
+		<br>
+		<input type="radio" name="input" id="choice1" value="choice1">
+		<label>12</label>
+		<br>
+		<input type="radio" name="input" id="choice2" value="choice2">
+		<label>16</label>
+		<br>
+		<input type="radio" name="input" id="chocie3" value="choice2">
+		<label>11</label>
+		<br>
+		<input type="button" onclick="input()" value="submit">
+	</div>
+
+
+</body>
+</html>
